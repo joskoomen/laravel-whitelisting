@@ -1,0 +1,21 @@
+{
+    "name": "ypa/laravel-maintenance",
+    "description": "Package for ip whitelisting accessibility",
+    "version": "1.0.0",
+    "type": "package",
+    "require": {
+        "laravel/framework": "> 5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jos Koomen",
+            "email": "jos@yourpersonalagency.nl"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Ypa\\Laravel\\Maintenance\\": "src/"
+        }
+    }
+}
