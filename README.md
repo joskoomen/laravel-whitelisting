@@ -1,21 +1,21 @@
-# YPA Laravel Maintenance
+# Jos Koomen : Laravel Whitetlist
 
-Package to add Laravel Storefront Maintenance mode to make sure the website is available for testing and fixing issues while other people see a maintenance page.
+Package to add IP whitelisting to a Laravel application.
 
 
 ### Install
-1. Add the `MaintenanceServiceProvider` to your app config
+1. Add the `WhitelistServiceProvider` to your app config
 ```
     ...
     
     /*
      * Package Service Providers...
      */
-    Ypa\Laravel\Maintenance\MaintenanceServiceProvider::class,
+    JosKoomen\Laravel\Whitelist\WhitelistServiceProvider::class,
         
     ...
 ```
 
-2. run `php artisan vendor:publish` and find/select `ypa-maintenance`
+2. run `php artisan vendor:publish` and find/select `jk-whitelist`
    - This will add the middleware
    - This will copy the view and config file to your project

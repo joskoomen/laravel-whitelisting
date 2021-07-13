@@ -2,10 +2,10 @@
 
 /*
 |--------------------------------------------------------------------------
-| Ypa Maintenance Mode
+| Jos Koomen Whitelist Mode
 |--------------------------------------------------------------------------
 |
-| YPA Package for disabling Maintenance mode for whitelisted locations.
+| Package for adding whitelisted locations.
 |
 */
 
@@ -13,23 +13,23 @@ return [
 
     /*
      |--------------------------------------------------------------------------
-     | Maintenance Mode Active
+     | Whitelist Mode Active
      |--------------------------------------------------------------------------
      |
      | For live debug and test sessions
      |
      */
 
-    'active' => env('YPA_MAINTENANCE_ACTIVE', false),
+    'active' => env('JK_WHITELIST_ACTIVE', false),
 
     /*
     |--------------------------------------------------------------------------
-    | Maintenance Mode Whitelist
+    | Whitelist IP Addresses
     |--------------------------------------------------------------------------
     |
-    | Comma separated IP addresses for maintenance mode whitelisting
+    | Comma separated IP addresses for whitelisting
     |
     */
-    'whitelist' => env('APP_MAINTENANCE_WHITELIST', []),
+    'whitelist' => env('JK_WHITELIST_IP_ADDRESSES', []),
 
 ];

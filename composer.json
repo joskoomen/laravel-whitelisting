@@ -1,5 +1,5 @@
 {
-    "name": "ypa/laravel-maintenance",
+    "name": "joskoomen/laravel-whitelist",
     "description": "Package for ip whitelisting accessibility",
     "version": "1.0.0",
     "type": "package",
@@ -10,12 +10,12 @@
     "authors": [
         {
             "name": "Jos Koomen",
-            "email": "jos@yourpersonalagency.nl"
+            "email": "ik@joskoomen.nl"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Ypa\\Laravel\\Maintenance\\": "src/"
+            "JosKoomen\\Laravel\\Whitelist\\": "src/"
         }
     }
 }
