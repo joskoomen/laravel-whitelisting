@@ -1,9 +1,8 @@
-<?php namespace Ypa\Laravel\Maintenance;
+<?php namespace JosKoomen\Laravel\Whitelist;
 
-use Ypa\Core\GuzzleHttp\GuzzleClientServiceProvider;
 use Illuminate\Support\ServiceProvider;
 
-class MaintenanceServiceProvider extends ServiceProvider
+class WhitelistServiceProvider extends ServiceProvider
 {
 
     /**
@@ -11,7 +10,7 @@ class MaintenanceServiceProvider extends ServiceProvider
      *
      * @var bool
      */
-    protected $package_name = 'ypa-maintenance';
+    protected $package_name = 'jk-whitelist';
 
     /**
      * Bootstrap the application events.
@@ -50,6 +49,6 @@ class MaintenanceServiceProvider extends ServiceProvider
 
     private function handleMiddleware()
     {
-        $this->app['router']->pushMiddlewareToGroup('web', MaintenanceMiddleware::class);
+        $this->app['router']->pushMiddlewareToGroup('web', WhitelistMiddleware::class);
     }
 }
